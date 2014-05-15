@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Hoos Safe</string>
+    <string name="hello_world">Welcome to UVA Building Locations!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_course_list">BuildingList</string>
+    <string name="webservice_url">http://plato.cs.virginia.edu/~cs4720s14beet/tracks/view/</string>
+	<string name="building_name">Building Name:</string>
+    <string name="enter_building_name">Enter</string>
+    <string name="get_building_location">Location</string>
+    <string name="missing_building_name">Enter a Building</string>
+    <string name="invalid_building_name">Invalid Building Name</string>
+    <string name="ok">OK</string>
+    <string name="near_building_name">Find Nearest Buildings</string>
+    <string name="track_building_name">Track New Building</string>
+    <string name="latitude">latitude:</string>
+    <string name="longitude">longitude:</string>
+    <string name="recently_recorded_points">Recently Recorded Points</string>
+    <string name="search_building_name">Search Tracked Buildings</string>
+    <string name="record_point">Record Current Point</string>
+     <string-array name="list_of_buildings">
+      <item >Physics</item>
+      <item >Alderman Library</item>
+      <item >Cabell</item>
+      <item >Amphitheater</item>
+      <item >Aquatic Fitness Center</item>
+      <item >Astronomy Building</item>
+      <item >Booker House</item>
+      <item >Bookstore</item>
+      <item >Brooks Hall</item>
+      <item >Brown Residential College</item>
+      <item >Bryan Hall</item>
+      <item >Bryant Hall</item>
+      <item >Campbell Hall</item>
+      <item >Cauthen House</item>
+      <item >Chapel</item>
+      <item >Clark Hall</item>
+      <item >Chemistry Bldg</item>
+      <item >Chemical Engineering Building	</item>
+      <item >Clemons Library</item>
+      <item >Cobb Hall</item>
+      <item >Cocke Hall</item>
+      <item >Dell 1</item>
+      <item >Dell 2</item>
+      <item >Emmet/Ivy Garage</item>
+      <item >Garrett Hall</item>
+      <item >John Paul Johns Arena</item>
+      <item >Kerchof Hall</item>
+      <item >Maury Hall</item>
+      <item >Mechanical Engr Bldg</item>
+      <item >Memorial Gymnasium</item>
+      <item >Minor Hall</item>
+      <item >Monroe Hall</item>
+      <item >Nau Hall</item>
+      <item >New Cabell Hall</item>
+      <item >Newcomb</item>
+      <item >Observatory Hill Dining Hall</item>
+      <item >Office of African American Affairs</item>
+      <item >Old Cabell Hall</item>
+      <item >Olsson Hall</item>
+      <item >Peabody</item>
+      <item >Physics Building</item>
+      <item >Rice Hall</item>
+      <item >Scott Stadium</item>
+      <item >Thornton Hall</item>
+      <item >Wilsdorf</item>
+      <item >The Lawn</item>
+      <item >Student Activities Building</item>
+      </string-array>
+      <string-array name="list_of_users">
+	     <item >beet1</item>
+	      <item >beet2</item>
+	      <item>beet3</item>
+	      <item>beet4</item>
+         </string-array>
+</resources>

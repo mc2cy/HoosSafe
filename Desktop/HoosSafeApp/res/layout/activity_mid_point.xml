@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/user1textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" 
+            android:textSize="20dp" 
+        android:text="User1:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/user1autoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user1textView"
+        android:layout_alignBaseline="@+id/user1textView"
+        android:layout_alignBottom="@+id/user1textView"
+        
+        android:ems="10"
+        
+            android:textSize="20dp" 
+        >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/user2autoCompleteTextView"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user1autoCompleteTextView"
+        android:layout_below="@+id/user1autoCompleteTextView"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        
+            android:textSize="20dp" 
+         >
+     <requestFocus />
+    </AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/user2textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user2autoCompleteTextView"
+        android:layout_toLeftOf="@+id/user2autoCompleteTextView"
+        android:textStyle="bold" 
+            android:textSize="20dp" 
+        android:text="User2:" />
+
+    <Button
+        android:id="@+id/enterUsersButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user2autoCompleteTextView"
+        android:layout_centerHorizontal="true"
+          android:textSize="20dp" 
+        android:text="Enter" />
+    
+     <fragment 
+          android:id="@+id/map3"
+          android:layout_below="@+id/enterUsersButton"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity"
+    android:background="#ffffffff"
+	 >
+	 
+	 
+  <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="Hoos Safe" 
+            android:layout_centerHorizontal="true"
+            android:textSize="38dp"
+            android:textStyle="bold"
+            
+            />
+   
+<TableLayout
+    android:id="@+id/tablenext"
+    android:layout_width="380dip"
+    android:layout_height="500dip"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/title"
+    android:layout_marginRight="8dp"
+    android:stretchColumns="*" >
+    
+              <TableRow
+	    
+        android:id="@+id/tableRow1"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="5dip">
+
+  <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" >
+                  
+                  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="Latitude: "
+            android:textStyle="bold" 
+            android:textSize="22dp"/>
+
+        <TextView
+
+            android:id="@+id/textLat"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="38.03379" 
+            android:textSize="22dp"/>
+              </RelativeLayout>
+
+          </TableRow>
+
+  <TableRow
+		
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="10dip" >
+<RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" >
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="Longitude: "
+            android:textStyle="bold"
+            android:textSize="22dp"
+             />
+
+ 	 <TextView
+ 	     android:layout_toRightOf="@+id/textView2"
+            android:id="@+id/textLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="-78.511611" 
+            android:textSize="22dp"/>
+ 	 </RelativeLayout>
+        </TableRow>
+<TableRow
+		
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+       android:layout_marginBottom="12dip" >
+    <Button
+        
+        android:id="@+id/searchBuildingButton"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_building_name"
+        android:drawableStart="@drawable/searchsmall"
+        android:onClick="searchBuilding"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+      android:paddingLeft="50dip"
+    	android:paddingRight="50dip"
+         />
+    </TableRow>
+    <TableRow
+		
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+       android:layout_marginBottom="12dip" >
+    <Button
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/nearBuildingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/near_building_name"
+        android:onClick="nearLocation"
+        android:drawableStart="@drawable/nearbuildings"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+         android:paddingLeft="50dip"
+    	android:paddingRight="50dip"/>
+    </TableRow>
+    <TableRow
+		
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="12dip" >
+     <Button
+         android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/trackBuildingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/track_building_name"
+        android:onClick="trackBuilding"
+        android:drawableStart="@drawable/addbuilding"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+        android:paddingLeft="50dip"
+    	android:paddingRight="50dip" />
+     </TableRow>
+    <TableRow
+		
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="12dip">
+      <Button
+         android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/recordPointsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/record_point"
+        android:onClick="recordPoint"
+        android:drawableStart="@drawable/record"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+     android:paddingLeft="50dip"
+    	android:paddingRight="50dip"
+         />
+     </TableRow>
+     <TableRow
+		
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="12dip">
+    <Button
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/recordedPointsButton"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recently_recorded_points"
+        android:onClick="recentlyRecorded"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+        android:drawableStart="@drawable/points"
+        android:paddingLeft="50dip"
+    	android:paddingRight="50dip"
+    	 />
+</TableRow>
+<TableRow
+		
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="12dip" >
+    <Button
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/betweenUsersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="betweenUsers"
+        android:text="Buildings Between Users"
+        android:drawableStart="@drawable/users"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+        android:paddingLeft="50dip"
+    	android:paddingRight="50dip"
+         />
+    
+    </TableRow>
+ <TableRow
+		
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_marginBottom="12dip" >
+    <Button
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="emergencyMessage"
+        android:text="Send Emergency Message "
+        android:drawableStart="@drawable/help"
+        android:textColor="#ff000000"
+        android:background = "@drawable/rectangle"
+        android:paddingLeft="50dip"
+    	android:paddingRight="50dip"
+    	
+         />
+    
+    </TableRow>
+    </TableLayout>
+
+             <fragment
+                 android:id="@+id/map"
+                 android:name="com.google.android.gms.maps.MapFragment"
+                 android:layout_width="400dip"
+                 android:layout_height="620dip"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/title"
+                 android:layout_toLeftOf="@+id/tablenext"
+                 android:layout_margin="15dp" />
+    
+</RelativeLayout>

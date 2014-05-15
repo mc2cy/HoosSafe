@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.virginia.buildinglocation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <uses-feature
+      android:glEsVersion="0x00020000"
+      android:required="true" />
+    <permission
+        android:name="edu.virginia.buildinglocation.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    
+	<uses-permission android:name="edu.virginia.buildinglocation.permission.MAPS_RECEIVE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/company"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:label="Buildings Nearby"
+            android:name="edu.virginia.buildinglocation.nearBuildingActivity"
+            android:parentActivityName="edu.virginia.buildinglocation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.buildinglocation.MainActivity" />
+        
+        </activity>
+        <activity
+            android:label="Track a Building"
+            android:name="edu.virginia.buildinglocation.trackBuildingActivity"
+            android:parentActivityName="edu.virginia.buildinglocation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.buildinglocation.MainActivity" />
+            </activity>
+         <activity
+            android:label="Recently Recorded Points"
+            android:name="edu.virginia.buildinglocation.recordedPointsActivity"
+            android:parentActivityName="edu.virginia.buildinglocation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.buildinglocation.MainActivity" />
+            </activity>
+           
+         <activity
+            android:label="Find Safe Buildings"
+            android:name="edu.virginia.buildinglocation.searchBuildingActivity"
+            android:parentActivityName="edu.virginia.buildinglocation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.buildinglocation.MainActivity" />
+            </activity>
+         <activity
+            android:label="Midpoint Buildings Between Two Users"
+            android:name="edu.virginia.buildinglocation.betweenUsersActivity"
+            android:parentActivityName="edu.virginia.buildinglocation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.virginia.buildinglocation.MainActivity" />
+            </activity>
+            
+    <uses-library android:name="com.google.android.maps"/>  
+    <meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version" /> 
+    <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyC8QrEy3NqqEbmYewE8kw_m01hG6BE0ChQ"/> 
+    
+    <activity
+            android:name="edu.virginia.buildinglocation.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+</manifest>
