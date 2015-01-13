@@ -255,7 +255,7 @@ public class MainActivity extends Activity {
 			
 			String location = "Latitude: " + textLat.getText().toString() + " Longitude: "+ textLong.getText().toString();
 			 String to = "hoosafe@gmail.com";
-			 String to1 = "6465321898@vtext.com";
+			 String to1 = "1231231234@vtext.com";
 			  String subject = "Help! Please call 911!";
 			  String message = "Please call 911 and report my location , " +location  ;
 
